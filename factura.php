@@ -1,5 +1,5 @@
 <?php
-$cod = $_POST['cedula'];
+$cod = $_POST['codigo'];
 
 $conexion = new mysqli("localhost","root","","almacen");
 
@@ -29,7 +29,7 @@ while ($row = mysqli_fetch_row($resultado))  {
         <?php } ?>
         <table>
           <tr>
-            <td>TITULO</td>
+            <th>TITULO</th>
           </tr>
           <tr>
             <td>CONTENIDO</td>
