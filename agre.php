@@ -11,7 +11,7 @@ $con = new mysqli("localhost","root","","almacen");
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
   }
-              $resultado = mysqli_query($con,"SELECT * FROM barrios WHERE ID = '$cod'");
+              $resultado = mysqli_query($con,"SELECT * FROM barrios WHERE COD_BARRIO = '$cod'");
 
                 while ($row = mysqli_fetch_row($resultado))  {
                   if($ced != $row[0]){
@@ -41,7 +41,7 @@ $con = new mysqli("localhost","root","","almacen");
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/metro.js"></script>
- 
+
     <style>
         .login-form {
             width: 25rem;
@@ -101,4 +101,3 @@ $con = new mysqli("localhost","root","","almacen");
     </div>
 </body>
 </html>
-

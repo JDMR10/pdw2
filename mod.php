@@ -10,7 +10,7 @@ $cod = $_POST['codigo'];
     exit();
   }
 
-    $resultado = mysqli_query($con,"SELECT * FROM barrios where COD_BARRIO = '$cod'");
+          $resultado = mysqli_query($con,"SELECT * FROM barrios WHERE COD_BARRIO = '$cod'");
 
  while ($row = mysqli_fetch_row($resultado))  {
        $codigo   = $row[0];
