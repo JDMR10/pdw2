@@ -10,7 +10,7 @@
     exit();
   }
 // Sentencia SQL
-    $sentencia="DELETE FROM barrios WHERE ID ='$cod'";
+    $sentencia="DELETE FROM barrios WHERE COD_BARRIO ='$cod'";
 
     $resultado = mysqli_query($conexion,$sentencia);
 
