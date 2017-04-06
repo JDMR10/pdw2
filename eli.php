@@ -1,6 +1,6 @@
 <?php
-   $cod = $_POST['codigo'];
-  
+   $cod = $_POST['nombre'];
+
  //Se abre una  conexion con el servidor
   $conexion = new mysqli("localhost","root","","almacen");
 
@@ -10,8 +10,8 @@
     exit();
   }
 // Sentencia SQL
-    $sentencia="DELETE FROM barrios WHERE ID ='$cod'";  
-    
+    $sentencia="DELETE FROM barrios WHERE ID ='$cod'";
+
     $resultado = mysqli_query($conexion,$sentencia);
 
     echo "Los datos han sido eliminados";

@@ -10,14 +10,14 @@ $cod = $_POST['codigo'];
     exit();
   }
 
-    $resultado = mysqli_query($con,"SELECT * FROM barrios where ID = $cod");
+    $resultado = mysqli_query($con,"SELECT * FROM barrios where COD_BARRIO = '$cod'");
 
  while ($row = mysqli_fetch_row($resultado))  {
        $codigo   = $row[0];
        $nombre = $row[1];
 
 }
-    
+
 
 echo "   <H2> Formulario De Modificar Datos </H2>";
        echo "   <form accept-charset=".'UTF-8'." action=".'mod2.php'." method=".'post'.">";
