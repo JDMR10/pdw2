@@ -9,7 +9,7 @@ $conexion = new mysqli("localhost","root","","almacen");
     exit();
   }
 
-    $resultado = mysqli_query($con,"SELECT * FROM clientes where ID = $cod");
+    $resultado = mysqli_query($conexion,"SELECT * FROM clientes WHERE ID = $cod");
 
 
 ?>
