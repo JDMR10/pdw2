@@ -1,29 +1,3 @@
-<?php
-
-$cod = $_POST['codigo'];
-$nombar = $_POST['nbarrio'];
-
-// Conexion a la base de datos.
-$con = new mysqli("localhost","root","","almacen");
-
-  //Se verifica que no haya error de conexión
-  if (mysqli_connect_errno()) {
-    printf("Connect failed: %s\n", mysqli_connect_error());
-    exit();
-  }
-              $resultado = mysqli_query($con,"SELECT * FROM barrios WHERE COD_BARRIO = '$cod'");
-
-                while ($row = mysqli_fetch_row($resultado))  {
-                  if($ced != $row[0]){
-                     echo "Barrio no esta registrado en la bases de datos";
-                       $sentencia = "INSERT INTO barrios VALUES ('$cod','$nombar')";
-                          $resultado1 =mysqli_query($con,$sentencia);
-                     echo $resultado1;
-                   echo "</br>";
-                echo "Barrio es registrado en la base de datos";
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,14 +53,25 @@ $con = new mysqli("localhost","root","","almacen");
     <span class="app-bar-divider"></span>
 
     <ul class="app-bar-menu">
-        <li><a href="">registar</a></li>
-        <li><a href="">modificar</a></li>
-        <li><a href="">eliminar</a></li>
-        <li><a href="">listar</a></li>
+        <li><a href="page.html">registar</a></li>
+        <li><a href="modificar.html">modificar</a></li>
+        <li><a href="eliminar.html">eliminar</a></li>
+        <li><a href="listar.html">listar</a></li>
     </ul>
 </div>
     <div class="login-form padding20 block-shadow">
      <?php
+     $cod = $_POST['codigo'];
+     $nombar = $_POST['nbarrio'];
+
+      // Conexion a la base de datos.
+      $con = new mysqli("localhost","root","","almacen");
+
+     //Se verifica que no haya error de conexión
+      if (mysqli_connect_errno()) {
+      printf("Connect failed: %s\n", mysqli_connect_error());
+      exit();
+      }
               if($cod != $row[0]){
                      echo "Barrio no esta registrado en la bases de datos";
                        $sentencia = "INSERT INTO barrios VALUES ('$cod','$nombar')";
