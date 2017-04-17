@@ -42,11 +42,11 @@
     exit();
   }
 // Sentencia SQL
-    $sentencia="DELETE FROM barrios WHERE COD_BARRIO ='$cod'";
+    $sentencia="DELETE FROM barrios WHERE CODIGO_BARRIO ='$cod'";
 
     $resultado = mysqli_query($conexion,$sentencia);
 
-    echo "Los datos han sido eliminados";
+    echo "Los datos han sido eliminados si el usuario existe";
     echo "<a href='page.html'>home</a>";
 
 ?>

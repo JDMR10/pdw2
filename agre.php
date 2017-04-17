@@ -72,6 +72,9 @@
       printf("Connect failed: %s\n", mysqli_connect_error());
       exit();
       }
+
+    $resultado = mysqli_query($con,"SELECT * FROM barrios WHERE CODIGO_BARRIO = $cod");
+    while ($row = mysqli_fetch_row($resultado))  {
               if($cod != $row[0]){
                      echo "Barrio no esta registrado en la bases de datos";
                        $sentencia = "INSERT INTO barrios VALUES ('$cod','$nombar')";
@@ -79,9 +82,10 @@
                      echo $resultado1;
                    echo "</br>";
                 echo "Barrio es registrado en la base de datos";
-              else{
+              }else{
              echo "Barrio esta registrado";
-}
+                      }
+                                }//Fin del While
              ?>
     </div>
 </body>

@@ -44,7 +44,7 @@ $cod = $_POST['codigo'];
     exit();
   }
 
-          $resultado = mysqli_query($con,"SELECT * FROM barrios WHERE COD_BARRIO = '$cod'");
+          $resultado = mysqli_query($con,"SELECT * FROM barrios WHERE CODIGO_BARRIO = '$cod'");
 
  while ($row = mysqli_fetch_row($resultado))  {
        $codigo   = $row[0];
@@ -52,7 +52,9 @@ $cod = $_POST['codigo'];
 
 }
 
-
+if($codigo ==""){
+  echo "Usuario No Existe";
+}else{
 echo "   <H2> Formulario De Modificar Datos </H2>";
        echo "   <form accept-charset=".'UTF-8'." action=".'mod2.php'." method=".'post'.">";
 
@@ -64,7 +66,7 @@ echo "   <H2> Formulario De Modificar Datos </H2>";
 
        echo "      <input type=".'submit'." value=".'Modificar'." />";
 echo "</form>";
-
+}
 ?>
 </body>
 </html>
