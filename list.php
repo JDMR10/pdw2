@@ -15,6 +15,19 @@
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/metro.js"></script>
   </head>
+    <body>
+       <div class="app-bar">
+    <a class="app-bar-element" href="#">Home</a>
+
+    <span class="app-bar-divider"></span>
+
+     <ul class="app-bar-menu">
+        <li><a href="page.html">registar</a></li>
+        <li><a href="modificar.html">modificar</a></li>
+        <li><a href="eliminar.html">eliminar</a></li>
+        <li><a href="listar.html">listar</a></li>
+    </ul>
+</div> 
 <?php
 
 //Se abre una  conexion con el servidor
@@ -48,3 +61,5 @@
        echo "</tr>";
     }
     echo "</table>";
+        </body>
+            </html>
