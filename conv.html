@@ -27,18 +27,18 @@ let y = document.getElementById("resultado").value;
 switch(x) {
   case x == "USD":
     y = j * 2000;
-    document.getElementById("resultado").innerHTML = y;
+    document.getElementById("resultado").innerHTML ="<p>"+y+"</p>";
     break;
   case x == "COP":
    y = j * 1000;
-    document.getElementById("resultado").innerHTML = y;
+    document.getElementById("resultado").innerHTML = "<p>"+y+"</p>";
     break;
   case x == "EUR":
      y = j * 3000;
-    document.getElementById("resultado").innerHTML = y;
+    document.getElementById("resultado").innerHTML = "<p>"+y+"</p>";
     break;
   default:
-   document.getElementById("resultado").innerHTML = "NO DIGITADO ALGO";
+   document.getElementById("resultado").innerHTML = "<p>NO DIGITADO ALGO</p>";
      } // FIN DEL CASO
 }//FIN DE FUNCION 
 
