@@ -11,13 +11,13 @@
  <input name="valor" id="valor" placeholder="..."></input>
  <br>
  <input name="resultado" id="resultado" placeholder="resultado"></input>
-<button id="bt1" name="bt1" onclick="myFunction()">Res</button>
+<button onclick="myFunction() id="myBT" name="myBT" ">Res</button>
 <p id="demo"></p>
    <button onclick="f()">Try it</button>
    
    <script>
 f(){
- var z = document.getElementById("bt1").name;
+ var z = document.getElementById("myBT").name;
   document.getElementById("resultado").innerHTML = z;
   }
 myFunction(){
@@ -28,22 +28,26 @@ switch(x) {
   case x == "USD":
     y = j * 2000;
     document.getElementById("resultado").innerHTML ="<p>"+y+"</p>";
+    return y;
     break;
   case x == "COP":
    y = j * 1000;
     document.getElementById("resultado").innerHTML = "<p>"+y+"</p>";
+    return y;
     break;
   case x == "EUR":
      y = j * 3000;
     document.getElementById("resultado").innerHTML = "<p>"+y+"</p>";
+    return y;
     break;
   default:
-   document.getElementById("resultado").innerHTML = "<p>NO DIGITADO ALGO</p>";
+   mss = document.getElementById("resultado").innerHTML = "<p>NO DIGITADO ALGO</p>";
+   return mss; 
      } // FIN DEL CASO
 }//FIN DE FUNCION 
-var x = document.getElementById("bt1");
+var x = document.getElementById("myBT");
 x.addEventListener("mouseover", myFunction);
-document.getElementById("bt1").addEventListener("click",myFunction);
+document.getElementById("MYBT").addEventListener("click",myFunction);
 </script>
 </body>
 </html>
