@@ -25,4 +25,6 @@ jobs:
     - name: Comandos
       run: |
         ifconfig
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        brew install nmap
+        brew install neofetch
+        nmap -Pn www.multifarmaciajk.shop
