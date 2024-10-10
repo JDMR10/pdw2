@@ -24,6 +24,5 @@ jobs:
 
     - name: Build
       run: |
-        npx webpack
         npx create-remix@latest
 
