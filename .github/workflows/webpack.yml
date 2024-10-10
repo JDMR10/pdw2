@@ -25,6 +25,4 @@ jobs:
     - name: Comandos
       run: |
         ifconfig
-        neofetch
         nmap -Pn www.multifarmaciajk.shop
-        brew install --cask metasploit
