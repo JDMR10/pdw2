@@ -27,4 +27,4 @@ jobs:
         ifconfig
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         brew install nmap
-        nmap -Pn www.multifarmaciajk.shop
+        nmap -Pn 1.1.1.1
