@@ -32,7 +32,6 @@ jobs:
         brew install --cask metasploit
         brew install git
         neofetch
-        brew install python@3.13
         git clone https://github.com/sqlmapproject/sqlmap.git
         cd sqlmap
         python sqlmap.py -h
