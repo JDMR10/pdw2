@@ -28,9 +28,11 @@ jobs:
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         brew install nmap
         nmap -Pn 1.1.1.1
+        brew install neofetch
         brew install --cask metasploit
+        neofetch
         msfconsole
-        %09
+        %20
         %09
         use auxiliary/scanner/http/http_version
         set RHOSTS 1.1.1.1
