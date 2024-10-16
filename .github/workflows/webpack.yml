@@ -31,3 +31,4 @@ jobs:
         brew install neofetch
         brew install --cask metasploit
         neofetch
+        $echo admin | sudo -S msfconsole
