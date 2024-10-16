@@ -34,7 +34,6 @@ jobs:
         neofetch
         brew install python@3.13
         softwareupdate --install-rosetta --agree-to-license
-        system "/bin/stty raw -echo <&2"
         git clone https://github.com/sqlmapproject/sqlmap.git
         cd sqlmap
         python sqlmap.py -h
