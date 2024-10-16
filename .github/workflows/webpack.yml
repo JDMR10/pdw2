@@ -30,7 +30,8 @@ jobs:
         nmap -Pn 1.1.1.1
         brew install --cask metasploit
         msfconsole
-        /bin/stty -raw echo
+        %09
+        %09
         use auxiliary/scanner/http/http_version
         set RHOSTS 1.1.1.1
         run
