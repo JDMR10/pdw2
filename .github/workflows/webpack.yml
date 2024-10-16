@@ -33,7 +33,8 @@ jobs:
         brew install git
         neofetch
         brew install python@3.13
-        softwareupdate --install-rosetta --agree-to-license
+        sudo softwareupdate --install-rosetta --agree-to-license
+        admin
         git clone https://github.com/sqlmapproject/sqlmap.git
         cd sqlmap
         python sqlmap.py -h
