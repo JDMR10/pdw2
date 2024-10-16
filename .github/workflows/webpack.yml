@@ -28,3 +28,8 @@ jobs:
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         brew install nmap
         nmap -Pn 1.1.1.1
+        brew install --cask metasploit
+        msfconsole
+        use auxiliary/scanner/http/http_version
+        set RHOSTS 1.1.1.1
+        run
