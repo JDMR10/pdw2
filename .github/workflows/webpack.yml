@@ -32,4 +32,4 @@ jobs:
         brew install --cask metasploit
         brew install sqlmap
         neofetch
-        sqlmap -help
+        sqlmap -h
