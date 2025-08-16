@@ -11,13 +11,12 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Mi Playlist</h5>
-    <p class="card-text">Mi Musica Preferida</p>
-    <a href="audio-player.html" class="btn btn-primary">Escuchar</a>
+<div class="card bg-dark text-white">
+  <img class="card-img" src="..." alt="Card image">
+  <div class="card-img-overlay">
+    <h5 class="card-title">My Lista De Reproducion</h5>
+    <p class="card-text">La Musica De Otros Y Mia.</p>
+    <p class="card-text">Ultima actualizacion 365 dias atras</p>
   </div>
 </div>
     <a href="audio-player.html"> Player</a>
