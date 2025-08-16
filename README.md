@@ -12,11 +12,11 @@
   </head>
   <body>
 <div class="card bg-dark text-white">
-  <img class="card-img" src="..." alt="Card image">
+  <img class="card-img" src="https://jdmr10.github.io/pdw2/images/A972653E-B345-411C-8E30-3940C5D78249_4_5005_c.jpeg" alt="Card image">
   <div class="card-img-overlay">
     <h5 class="card-title">My Lista De Reproducion</h5>
-    <p class="card-text">La Musica De Otros Y Mia. <a href="audio-player.html"> Escuchar</a></p>
-    <p class="card-text">Ultima actualizacion 365 dias atras</p>
+    <p class="card-text">Escuchar</p>
+    <p class="card-text">Ultima actualizacion 3 dias atras</p>
   </div>
 </div>
     
