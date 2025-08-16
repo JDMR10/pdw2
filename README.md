@@ -15,11 +15,11 @@
   <img class="card-img" src="..." alt="Card image">
   <div class="card-img-overlay">
     <h5 class="card-title">My Lista De Reproducion</h5>
-    <p class="card-text">La Musica De Otros Y Mia.</p>
+    <p class="card-text">La Musica De Otros Y Mia. <a href="audio-player.html"> Escuchar</a></p>
     <p class="card-text">Ultima actualizacion 365 dias atras</p>
   </div>
 </div>
-    <a href="audio-player.html"> Player</a>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
