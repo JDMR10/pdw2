@@ -12,6 +12,14 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Mi Playlist</h5>
+    <p class="card-text">Mi Musica Preferida</p>
+    <a href="audio-player.html" class="btn btn-primary">Escuchar</a>
+  </div>
+</div>
     <a href="audio-player.html"> Player</a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
